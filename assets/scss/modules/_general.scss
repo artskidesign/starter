@@ -1,0 +1,54 @@
+// General Style
+
+body {
+	min-height: 100vh;
+	background: #000000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.artski-logo {
+	// margin: -10px 0 0 -70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    text-align: center;
+	text-transform: uppercase;
+	z-index: 0;
+
+	&:hover {
+
+		.artski-logo__shape {
+			transform: scale(1.1);
+		}		
+	}
+
+    &__wrap {
+    	position: absolute;
+    	top:50%;
+    	left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+
+    	&--title {
+    	font-size: 12vw;
+		font-weight: bold;
+		white-space: nowrap;
+    	}
+
+	    &--desc {
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+
+    &__shape {
+    	width: 100%;
+		max-width: 400px;
+		transition: 0.5s transform ease-out;
+    }  
+}
+
+
