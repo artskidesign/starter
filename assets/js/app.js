@@ -15,8 +15,7 @@ var app = {
   heroAnim: function () {
 
     $(function(){
-      title = $("p.artski-logo__wrap--title");
-      title.velocity(
+      $("p.artski-logo__wrap--title").velocity(
         { translateY: [0, 20], opacity: [1, 0] }, 
         { easing: [500, 20] } );
     });
@@ -27,7 +26,8 @@ var app = {
 
     var shape = $('.artski-logo__shape'),
         title = $("p.artski-logo__wrap--title"),
-        desc = $("p.artski-logo__wrap--desc");
+        desc = $("p.artski-logo__wrap--desc"),
+        subdesc = $("p.artski-logo__wrap--sub-desc");
 
     $(function(){
       shape.velocity(
@@ -42,15 +42,28 @@ var app = {
         title.velocity(
           { translateY: [0, 20], opacity: [1, 0] }, 
           { easing: [500, 20], duration: 500, } ).stop();
+        title.text("HIT ME!").stop();
+
         desc.velocity(
           { translateY: [0, 12], opacity: [1, 0] }, 
           { easing: [600, 30], duration: 500, delay: 80 } ).stop();
+        subdesc.velocity(
+          { translateY: [0, 12], opacity: [1, 0] }, 
+          { easing: [400, 30], duration: 350, delay: 100 } ).stop(); 
+
       },
 
       function(){
         title.velocity(
           { translateY: [0, -20], opacity: [1, 0] }, 
           { easing: [0, 20] } );
+        title.text("STARTER").stop();
+        desc.velocity(
+          { translateY: [0, 12], opacity: [1, 0] }, 
+          { easing: [600, 30], duration: 500, delay: 80 } ).stop();
+        subdesc.velocity(
+          { translateY: [0, 12], opacity: [1, 0] }, 
+          { easing: [400, 30], duration: 350, delay: 100 } ).stop(); 
       }
 
     );

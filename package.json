@@ -1,14 +1,14 @@
 {
   "name": "starter",
   "version": "1.0.0",
-  "description": "Gulp 4 | SASS | browserSync | Bootstrap 4",
+  "description": "NODE.JS . NPM . GULP 4 . SASS . BROWSERSYNC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://artskid@bitbucket.org/artskid/starter.git"
+    "url": "git+https://github.com/artskidesign/starter.git"
   },
   "keywords": [
     "bootstrap 4",
@@ -20,7 +20,7 @@
   "author": "artski",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/artskidesign/starter/issues"
   },
   "homepage": "http://artskidesign.com",
   "dependencies": {
